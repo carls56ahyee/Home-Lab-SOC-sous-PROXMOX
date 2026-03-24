@@ -24,13 +24,13 @@ Pour isoler le laboratoire du réseau domestique, deux commutateurs virtuels (Li
 **Schéma de flux :**
 > Internet ➡️ Box ➡️ Proxmox (vmbr0) ➡️ **pfSense (Firewall + NIDS)** ➡️ Réseau Isolé (vmbr1 - 10.0.0.0/24) ➡️ Serveurs Cibles
 
-![Schéma de l'architecture réseau du laboratoire](images/schema-reseau.png)
+![Schéma de l'architecture réseau du laboratoire](images/schema-reseau.png.png)
 
 Toutes les machines du LAN accèdent à internet via pfSense. L'accès depuis l'extérieur vers les machines du LAN est strictement contrôlé par des règles de redirection de ports (NAT) sur des ports non-standards.
 
 ---
 
-## 🖥️ Parc de Machines Virtuelles (VM)
+## 🖥️ Parc de Machines Virtuelles (VM) (images/TableaudebordPROXMOX.png.png)
 
 | Machine | OS | RAM | IP (LAN) | Rôles & Services déployés |
 | :--- | :--- | :--- | :--- | :--- |
@@ -55,7 +55,7 @@ Toutes les machines du LAN accèdent à internet via pfSense. L'accès depuis l'
 * **Sysmon :** Déployé sur Windows avec la configuration durcie de *SwiftOnSecurity* pour remonter la création de processus furtifs (`Living off the Land`, ex: abus de `certutil`), les requêtes réseau et les modifications de registre.
 * **Vulnerability Detector :** Intégration des bases NVD mondiales pour un audit proactif et continu des failles (CVE) sur les endpoints.
 
-![Tableau de bord Wazuh montrant la détection d'événements](images/wazuh-dashboard.png)
+![Tableau de bord Wazuh montrant la détection d'événements](images/wazuh-dashboard.png.png)
 
 ### 3. Intelligence Artificielle Locale (Docker)
 * Mise en place d'un environnement IA 100% local et déconnecté d'internet pour l'assistance à l'analyse de logs et de requêtes.
