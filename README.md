@@ -30,7 +30,8 @@ Toutes les machines du LAN accèdent à internet via pfSense. L'accès depuis l'
 
 ---
 
-## 🖥️ Parc de Machines Virtuelles (VM) (images/TableaudebordPROXMOX.png.png)
+## 🖥️ Parc de Machines Virtuelles (VM) 
+![Schéma de tableau de bord Proxmox](images/TableaudebordPROXMOX.png.png)
 
 | Machine | OS | RAM | IP (LAN) | Rôles & Services déployés |
 | :--- | :--- | :--- | :--- | :--- |
